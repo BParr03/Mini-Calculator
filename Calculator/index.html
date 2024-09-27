@@ -6,13 +6,12 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Calculator</h1>
     <div class="calculator-grid">
       <form name="calculator" onsubmit="return answer()">
         <input class="output" name="output" readonly> </input>
         </form>
           <div class="buttons">
-          <input type ="button" value="AC"  style="width:30%; background-color:red; " onclick = "aClear()">
+          <input type ="button" value="AC"  style="width:180px; background-color:red; " onclick = "aClear()">
           <input type ="button" value="C"   onclick = "backspace()">
           <input type ="button" value="+"   onclick = "insert('+')   ">
           <br>
@@ -31,7 +30,7 @@
           <input type ="button" value="9"   onclick = "insert(9)   ">
           <input type ="button" value="*"   onclick = "insert('*')   ">
           <br>
-          <input type ="button" value="0" style="width:35%"   onclick = "insert(0)   "> </td>
+          <input type ="button" value="0" style="width:180px"   onclick = "insert(0)   "> </td>
           <input type ="button" value="."   onclick = "insert('.')   ">
           <input type ="submit" value="="  onclick = "equal()">
         </div>

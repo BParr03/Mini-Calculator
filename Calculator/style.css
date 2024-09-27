@@ -1,6 +1,10 @@
 body {
   margin: 0;
   padding: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
 }
 
 h1{
@@ -9,38 +13,39 @@ h1{
 }
 
 .output{
-  background-color: green;
-  border-radius: 1px;
-  border-style: solid;
-  height: 20px;
-  padding: 20px;
-  margin: auto;
-  margin-bottom: 5px;
-  width: 60%;
-  font-size: 40px;
-  color: white;
-
+  position: relative;
+  grid-column: span 4;
+  height: 50px;
+  width: calc(100% - 20px);
+  border: none;
+  outline: none;
+  background-color: #008000;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75);
+  text-align: right;
+  padding: 10px;
+  font-size: 2em;
 }
 
 .calculator-grid{
   background-color: darkgray;
-  max-width: 100%;
-  width: 30%;
+  position: relative;
+  min-width: 300px;
+  min-height: 400px;
   text-align: center;
   margin: auto;
-  padding: 20px;
+  padding: 40px 60px 80px;
   border-style: solid;
-  border-radius: 1px;
-  border-color: blueviolet;
+  border-radius: 10px;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.25);
 }
 
 .calculator{
-  border-bottom: 2px;
-  border-style: solid;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-  margin-bottom: 5px;
+  position: relative;
+  display: grid;
 }
 
 input:hover{
@@ -52,14 +57,20 @@ input:active{
 }
 
 input{
-  padding: 45px;
-  border-color: blue;
+  height: 80px;
+  width: 80px;
   border-radius: 1px;
   border-style: solid;
-  margin: auto;
-  font-size: larger;
+  margin: 8px;
+  font-size: 1.5em;
+  font-weight: 400;
   background-color: gray;
   color: white;
   display: inline-flex;
   align-items: flex-end;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+  10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.25),
+  inset 5px 5px 15px rgba(0, 0, 0, 0.25);
 }
