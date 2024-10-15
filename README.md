@@ -1,2 +1,2 @@
 # Mini-Calculator
-Simple Calculator project - made during my summer break just to practise coding 
+Simple Calculator Project - Made during a summer break between university academic years; CSS improved gradually when I had time to work on it more. 
